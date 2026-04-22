@@ -14,7 +14,12 @@
 #include <unistd.h>
 
 //place function prototypes here
+
+
+void printInitialsAjewett(void);
+
 void jgFun(void);
+
 
 
 
@@ -80,6 +85,7 @@ int main(int argc, char *argv[])
 			case 9:
 			{
 				puts("room9");
+				printInitialsAjewett();
 				break;
 			}
 			case 10:
@@ -424,7 +430,13 @@ int main(int argc, char *argv[])
 }
 
 //place functions here
+
+void printInitialsAjewett(void)
+{
+	printf("AJ\n");
+}
 void jgFun(void)
 {
 	printf("JGB");	
+
 }
