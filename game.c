@@ -15,11 +15,15 @@
 
 //place function prototypes here
 
+
+void fish(void);
+
 void printStudent30(void);
 
 void printInitialsAjewett(void);
 
 void jgFun(void);
+
 
 
 
@@ -91,6 +95,7 @@ int main(int argc, char *argv[])
 			}
 			case 10:
 			{
+				fish();
 				puts("room10");
 				break;
 			}
@@ -432,6 +437,12 @@ int main(int argc, char *argv[])
 }
 
 //place functions here
+
+void fish(void) 
+{
+
+	printf("JF");
+}
 
 void printStudent30(void)
 {
