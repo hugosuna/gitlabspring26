@@ -78,6 +78,10 @@ void brooklynstitt(void);
 
 void PogoAM(void);
 
+void hOsuna(void);
+
+
+
 int main(int argc, char *argv[])
 {
 	int choice = 0;
@@ -636,6 +640,11 @@ void printInitialsSMarkos(void)
 	printf("SM\n");
 }
 
+//User 68:
+void hOsuna(void)
+{
+	printf("\nHAO\n");
+}
 
 
 
