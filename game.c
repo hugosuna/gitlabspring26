@@ -54,6 +54,7 @@ void PogoAM(void);
 void aaGM(void);
 void room49game(void);
 void dleyva14(void);
+void AMaderaFun(void);
 void CAYfrog(void);
 void afFun(void);  
 void jmItsGoTime(void);
@@ -61,7 +62,6 @@ void stanPush(void);
 void printdAfeworkIntials(void);
 void kwillett48(void);
 void ncInitial(void);
-
 
 
 int main(int argc, char *argv[])
@@ -192,6 +192,7 @@ int main(int argc, char *argv[])
 			}
 			case 20:
 			{
+				AMaderaFun();
 				puts("room20");
 				break;
 			}
@@ -548,6 +549,10 @@ void rgarcia_fun(void)
 	printf("RJG");
 }
 
+void AMaderaFun(void)
+{
+	printf("AMadera\n");
+}
 
 
 void ls(void)
