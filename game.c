@@ -42,7 +42,11 @@ void jgFun(void);
 void printInitialsSMarkos(void);
 void brooklynstitt(void);
 void PogoAM(void);
+
+void room49game(void);
+
 void dleyva14(void);
+
 
 int main(int argc, char *argv[])
 {
@@ -328,6 +332,7 @@ int main(int argc, char *argv[])
 			case 49:
 			{
 				puts("room49");
+				room49game();
 				break;
 			}
 			case 50:
@@ -482,6 +487,11 @@ int main(int argc, char *argv[])
 
 //place function definitions below this comment
 
+
+void room49game(void)
+{
+	printf("G.C\n");
+}
 
 void mnFun(void)
 {
