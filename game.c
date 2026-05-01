@@ -2,13 +2,15 @@
 //GP+
 //LS
 //Ryan Rodriguez
+//Anthony Farris
 //Charles Parker
 //Kristopher Willett
 //
 //
 //
 
-void ANFUN(void);
+
+
 
 
 #include <stdlib.h>
@@ -21,7 +23,7 @@ void ANFUN(void);
 
 
 //place function prototypes here
-
+void ANFUN(void);
 void dcFunc(void);
 void cparkerFun(void);
 void rgarcia_fun(void);
@@ -52,6 +54,7 @@ void PogoAM(void);
 void aaGM(void);
 void room49game(void);
 void dleyva14(void);
+void afFun(void);  
 
 void jmItsGoTime(void);
 
@@ -367,6 +370,7 @@ int main(int argc, char *argv[])
 			}
 			case 52:
 			{
+				afFun();
 				puts("room52");
 				break;
 			}
@@ -508,6 +512,11 @@ int main(int argc, char *argv[])
 
 //place function definitions below this comment
 
+
+void afFun(void)
+{ 
+	puts("AFroom52");
+}
 void dcFunc(void)
 {
     printf("DCroom19\n");
@@ -517,6 +526,7 @@ void dcFunc(void)
 void room49game(void)
 {
 	printf("G.C\n");
+
 }
 
 void mnFun(void)
