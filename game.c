@@ -9,7 +9,9 @@
 //Kristopher Willet
 //Albert Bautista
 //Kristopher Willett
+//Nishat Nawshin
 //Angel Martinez
+
 
 
 
@@ -82,9 +84,11 @@ void RT_room57(void);
 void RT_playCupRound(void);
 void mtorres(void);
 void hOsuna(void);
+void nnawshin(void);
 void WMGwent(void);
 void nhfun(void);
 void printInitialsAngelM(void);
+
 
 
 int main(int argc, char *argv[])
@@ -205,7 +209,8 @@ int main(int argc, char *argv[])
 			}
 			case 18:
 			{
-				puts("room18");
+				nnawshin();
+                                puts("room18");
 				break;
 			}
 			case 19:
@@ -528,8 +533,7 @@ int main(int argc, char *argv[])
 			case 75:
                         {
                                 puts("room75");
-                                break;
-                        }
+                                break;                        }
 			case 99:
 			{
 				puts("You have escaped");
@@ -1577,6 +1581,12 @@ void stanPush(void)
 }
 
 
+
+void nnawshin()
+{
+	printf("N.N\n");
+}	
+
 void phas22(void)
 {
 	printf("JR");
@@ -1662,7 +1672,6 @@ void RT_playCupRound(void)
         printf("Wrong cup. The ball was under cup %d.\n", ballSpot + 1);
     }
 }
-
 
 
 
