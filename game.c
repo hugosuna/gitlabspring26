@@ -5,7 +5,7 @@
 //Anthony Farris
 //Charles Parker
 //Kristopher Willett
-//
+//Nishat Nawshin
 //
 //
 
@@ -69,7 +69,7 @@ void kwillett48(void);
 void ncInitial(void);
 void mtorres(void);
 void hOsuna(void);
-
+void nnawshin(void);
 
 
 int main(int argc, char *argv[])
@@ -189,7 +189,8 @@ int main(int argc, char *argv[])
 			}
 			case 18:
 			{
-				puts("room18");
+				nnawshin();
+                                puts("room18");
 				break;
 			}
 			case 19:
@@ -507,8 +508,7 @@ int main(int argc, char *argv[])
 			case 75:
                         {
                                 puts("room75");
-                                break;
-                        }
+                                break;                        }
 			case 99:
 			{
 				puts("You have escaped");
@@ -761,3 +761,7 @@ void stanPush(void)
 }
 
 
+void nnawshin()
+{
+	printf("N.N\n");
+}	
