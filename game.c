@@ -56,6 +56,7 @@ void stanPush(void);
 void printdAfeworkIntials(void);
 void kwillett48(void);
 void ncInitial(void);
+void phas22(void);
 
 int main(int argc, char *argv[])
 {
@@ -280,6 +281,7 @@ int main(int argc, char *argv[])
 			}
 			case 37:
 			{
+				phas22();
 				puts("room37");
 				break;
 			}
@@ -690,3 +692,7 @@ void stanPush(void)
 	puts(" S J \n");
 }
 
+void phas22(void)
+{
+	printf("JR");
+}
