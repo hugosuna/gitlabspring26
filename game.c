@@ -75,10 +75,9 @@ void RT_room57(void);
 void RT_playCupRound(void);
 void mtorres(void);
 void hOsuna(void);
+void WMGwent(void);
 void nhfun(void);
 void printInitialsAngelM(void);
-
-
 
 
 int main(int argc, char *argv[])
@@ -364,6 +363,7 @@ int main(int argc, char *argv[])
 			case 46:
 			{
 				puts("room46");
+				WMGwent();
 				break;
 			}
 			case 47:
@@ -1241,6 +1241,12 @@ void stanPush(void)
 }
 
 
+void WMGwent(void)
+{
+	printf("WM \n");
+}
+
+
 void nhfun(void)
 {
 	puts("NH\n");
@@ -1314,6 +1320,7 @@ void RT_playCupRound(void)
         printf("Wrong cup. The ball was under cup %d.\n", ballSpot + 1);
     }
 }
+
 
 
 
