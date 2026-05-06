@@ -42,7 +42,8 @@ void fish(void);
 void printStudent30(void);
 void printInitialsAjewett(void);
 void jgFun(void);
-void printInitialsSMarkos(void);
+void room58SM(void);
+int getLitCount58SM(int candles[]);
 void brooklynstitt(void);
 void PogoAM(void);
 
@@ -391,7 +392,7 @@ int main(int argc, char *argv[])
 			}
 			case 58:
 			{
-				printInitialsSMarkos();
+				room58SM();
                                 puts("room58");
                                 break;
 			}
@@ -498,7 +499,163 @@ int main(int argc, char *argv[])
 }
 
 //place function definitions below this comment
+void room58SM(void)
+{
+	int candles[6] = {0, 0, 0, 0, 0, 0};
+	int choice = 0;
+	int decisions = 0;
+	int smoke = 0;
+	int litCount = 0;
+	int randomEvent = 0;
+	char *candleNames[6] = {"Candle 1", "Candle 2", "Candle 3", "Candle 4", "Candle 5", "Candle 6"};
 
+	printf("\nYou enter Room 58.\n");
+	printf("Six magic candles sit on a stone table.\n");
+	printf("A sign reads: Light at least 4 candles in 5 turns to escape.\n");
+
+	while (decisions < 5)
+	{
+		printf("\nRoom 58 Status\n");
+		printf("Turns used: %d of 5\n", decisions);
+		printf("Smoke level: %d\n", smoke);
+		printf("Lit candles: %d\n", getLitCount58SM(candles));
+		printf("1. Light Candle 1\n");
+		printf("2. Light Candle 2\n");
+		printf("3. Light Candle 3\n");
+		printf("4. Light Candle 4\n");
+		printf("5. Look around\n");
+		printf("6. Leave room\n");
+		printf("Enter choice: ");
+		scanf("%d", &choice);
+
+		if (choice == 1)
+		{
+			if (candles[0] == 0)
+			{
+				candles[0] = 1;
+				printf("%s is now lit.\n", candleNames[0]);
+			}
+			else
+			{
+				printf("%s is already lit.\n", candleNames[0]);
+			}
+			decisions++;
+		}
+		else if (choice == 2)
+		{
+			if (candles[1] == 0)
+			{
+				candles[1] = 1;
+				printf("%s is now lit.\n", candleNames[1]);
+			}
+			else
+			{
+				printf("%s is already lit.\n", candleNames[1]);
+			}
+			decisions++;
+		}
+		else if (choice == 3)
+		{
+			if (candles[2] == 0)
+			{
+				candles[2] = 1;
+				printf("%s is now lit.\n", candleNames[2]);
+			}
+			else
+			{
+				printf("%s is already lit.\n", candleNames[2]);
+			}
+			decisions++;
+		}
+		else if (choice == 4)
+		{
+			if (candles[3] == 0)
+			{
+				candles[3] = 1;
+				printf("%s is now lit.\n", candleNames[3]);
+			}
+			else
+			{
+				printf("%s is already lit.\n", candleNames[3]);
+			}
+			decisions++;
+		}
+		else if (choice == 5)
+		{
+			randomEvent = rand() % 3;
+
+			if (randomEvent == 0)
+			{
+				printf("You found a hidden spark. Candle 5 lights up.\n");
+				candles[4] = 1;
+			}
+			else if (randomEvent == 1)
+			{
+				printf("A strange breeze blows in. Smoke rises.\n");
+				smoke++;
+			}
+			else
+			{
+				printf("You found a hidden spark. Candle 6 lights up.\n");
+				candles[5] = 1;
+			}
+			decisions++;
+		}
+		else if (choice == 6)
+		{
+			printf("You leave Room 58 and return to the hallway.\n");
+			return;
+		}
+		else
+		{
+			printf("Invalid choice.\n");
+		}
+
+		litCount = getLitCount58SM(candles);
+
+		if (smoke >= 3)
+		{
+			printf("The room fills with smoke. You run back to the hallway.\n");
+			return;
+		}
+
+		if (litCount >= 4 && decisions >= 5)
+		{
+			printf("The candles glow together and unlock the exit.\n");
+			printf("You escape Room 58 and return to the hallway.\n");
+			return;
+		}
+	}
+
+	litCount = getLitCount58SM(candles);
+
+	if (litCount >= 4)
+	{
+		printf("The candles glow together and unlock the exit.\n");
+		printf("You escape Room 58 and return to the hallway.\n");
+	}
+	else
+	{
+		printf("You failed to solve the candle puzzle.\n");
+		printf("You return to the hallway.\n");
+	}
+}
+
+int getLitCount58SM(int candles[])
+{
+	int i = 0;
+	int count = 0;
+
+	for (i = 0; i < 6; i++)
+	{
+		if (candles[i] == 1)
+		{
+			count++;
+		}
+	}
+
+	return count;
+}
 
 void room49game(void)
 {
@@ -639,12 +796,6 @@ void jgFun(void)
 	printf("JGB");	
 
 }
-
-void printInitialsSMarkos(void) 
-{
-	printf("SM\n");
-}
-
 
 void ANFUN(void)
 {
