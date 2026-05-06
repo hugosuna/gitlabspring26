@@ -66,7 +66,7 @@ void kwillett48(void);
 void ncInitial(void);
 void mtorres(void);
 void hOsuna(void);
-
+void WMGwent(void);
 
 int main(int argc, char *argv[])
 {
@@ -346,6 +346,7 @@ int main(int argc, char *argv[])
 			case 46:
 			{
 				puts("room46");
+				WMGwent();
 				break;
 			}
 			case 47:
@@ -748,4 +749,7 @@ void stanPush(void)
 	puts(" S J \n");
 }
 
-
+void WMGwent(void)
+{
+	printf("WM \n");
+}
